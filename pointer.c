@@ -5,7 +5,7 @@ int main(){
     int *z = &m;
     n=4;
     o=8;
-    printf("z stores the address of m  = %p\n", z);
+    printf("z stores the address of m =%d\n", z);
     printf("*z stores the value of m =%d\n", *z);
     printf("&m is the address of m =%u\n", &m);
     printf("&n stores the address of n =%p\n", &n);
