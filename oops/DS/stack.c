@@ -1,12 +1,18 @@
 #include <stdio.h>
-int top=-1, max, stack[100];
+#include <stdbool.h>
+#include <string.h>
+
+// for integer stack put data type to %d and for string change to %s/%c.
+
+int top=-1, max;
+char stack[100];
 void push(){
     top++;
     if (top==max){
         printf("\nStack is OverFlow\n");
     }else{
         printf("\nEnter your element for pushing: ");
-        scanf("%d",&stack[top]);
+        scanf("%s",&stack[top]);
     }
 }
 void pop(){
@@ -14,28 +20,36 @@ void pop(){
     {
         printf("\nStack is UnderFlow\n");
     }else{
-        printf("\nYour popped element is : %d",stack[top]);
+        printf("\nYour popped element is : %s",stack[top]);
         top--;
     }
 }
 void display(){
-    printf("\nYour stack is : \n");
+    printf("\nYour stack is : ");
     for (int i = 0; i <= top; i++)
     {
-        printf("%d ",stack[i]);
+        printf("%c ",stack[i]);
+    }
+}
+void reverse(){
+    printf("\nYour stack is : ");
+    for (int i = top; i >= 0; i--)
+    {
+        printf("%c ", stack[i]);
     }
 }
 int main(){
-    int input,temp = 2;
+    int input,temp = true;
     printf("\nEnter the length of stack: ");
-    scanf("%d",&max);
+    scanf("%s",&max);
     do
     {
         printf("\nEnter Valid Options:\n");
         printf("1.PUSH\n");
         printf("2.POP\n");
         printf("3.DISPLAY\n");
-        printf("4.END\n");
+        printf("4.Reverse Display\n");
+        printf("5.END\n");
         printf("Enter Your Choice: ");
         scanf("%d",&input);
         switch (input)
@@ -49,11 +63,17 @@ int main(){
         case 3:
             display();
             break;
+        case 4:
+            reverse();
+            break;
+        case 5:
+            temp = false;
+            printf("\nThanks for using my code.");
+            break;
         default:
-            // break;
-            temp = 3;
-            printf("\n  Thanks for using my code.");
+            printf("\nINVALID OPTION!!!");
+            break;
         }
-    } while (temp==2);
+    } while (temp);
     
 }
