@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdbool.h>
 #include <string.h>
 
 // for integer stack put data type to %d and for string change to %s/%c.
@@ -39,7 +38,7 @@ void reverse(){
     }
 }
 int main(){
-    int input,temp = true;
+    int input,temp = 1;
     printf("\nEnter the length of stack: ");
     scanf("%s",&max);
     do
@@ -67,7 +66,7 @@ int main(){
             reverse();
             break;
         case 5:
-            temp = false;
+            temp = 0;
             printf("\nThanks for using my code.");
             break;
         default:
