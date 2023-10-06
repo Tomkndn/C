@@ -7,6 +7,7 @@ struct library
     char book_title[20];
     int book_price;
 };
+
 int main()
 {
     struct library book1;

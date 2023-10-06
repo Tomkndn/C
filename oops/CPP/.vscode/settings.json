@@ -1,0 +1,8 @@
+{
+    "C_Cpp.default.compilerPath": "",
+    "C_Cpp.files.exclude": {
+
+        "**/.vscode": true,
+        "**/.vs": true
+    },
+}

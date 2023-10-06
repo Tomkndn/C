@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "primefac",
+      "request": "launch",
+      "mainClass": "JAVA.primefac",
+      "projectName": "C_f5e8042a"
+    },
+    {
+      "type": "java",
+      "name": "exp3",
+      "request": "launch",
+      "mainClass": "JAVA.exp3",
+      "projectName": "C_f5e8042a"
+    },
+    {
+      "type": "java",
+      "name": "exp2",
+      "request": "launch",
+      "mainClass": "JAVA.exp2",
+      "projectName": "C_f5e8042a"
+    },
+    {
+      "type": "java",
       "name": "exp1",
       "request": "launch",
       "mainClass": "JAVA.exp1",
